@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.cover-photo {
+    position: relative;
+    height: 350px;
+    background-color: #d3d6db;
+}
+
+.add-cover-photo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.camera-icon::before {
+    content: '📷';
+    margin-right: 5px;
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* editar foto de perfil*/
+
+.profile-photo {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.add-profile-photo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.profile-info p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #7f8286; 
+    padding: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.actions a:hover {
+    color: #17283a; 
+}
+
+.actions .add-story,
+.actions .edit-profile {
+    background-color: initial;
+    border-radius: 0;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #69707a;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content; /* Ajuste para que el ancho sea igual al contenido */
+}
+
+
+
+
+.profile-nav li {
+    flex: 1; 
+    text-align: center; 
+}
+
+
+.profile-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+
+.profile-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+}
+
+.profile-nav li {
+    margin: 0;
+}
+
+.profile-nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .profile-nav li {
+        flex: 1 0 auto;
+    }
+}
+
+.profile-nav a:hover {
+    background-color: #e4e6eb;
+}
+
+

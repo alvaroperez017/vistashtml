@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil y Publicación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Profile Header -->
+    <div class="profile-header">
+        <div class="cover-photo" id="coverPhotoContainer">
+            <label for="cover-upload" class="cover-upload-label">
+                Agregar foto de portada
+            </label>
+            <input type="file" id="cover-upload" class="cover-upload-input" onchange="updateCoverPhoto(event)">
+        </div>
+        <div class="profile-photo">
+            <label for="profile-upload" class="profile-upload-label">
+                <img src="icon/camera_icon.png" alt="Subir foto de perfil">
+            </label>
+            <input type="file" id="profile-upload" class="profile-upload-input" onchange="updateProfilePhoto(event)">
+        </div>
+    </div>
+    <div class="profile-links">
+        <a href="resume.html">Agregar Link Hoja de Vida</a>
+        <a href="ajustesperfil.html">Editar Perfil</a>
+    </div>
+    
+    <!-- Profile Description -->
+    <div class="profile-description">
+        <h2>Descripción perfil</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula venenatis lorem.</p>
+    </div>
+
+    <!-- Profile Sections -->
+    <div class="profile-sections">
+        <a href="index.html" class="section-button">Publicaciones</a>
+        <a href="calificaciones.html" class="section-button">Calificaciones y Referencias</a>
+        <a href="skills.html" class="section-button">Skills</a>
+    </div>
+
+    <!-- Post Section -->
+    <div class="post">
+        <div class="post-header">
+            <div class="post-user-icon">
+                <img src="icon/user_icon.png" alt="Icono de usuario">
+            </div>
+            <div class="post-user-info">
+                <span class="user-name">Daniela Marcela Alpala Ruiz</span>
+                <span class="post-time">35 minutos</span>
+            </div>
+            <div class="post-actions">
+                <a href="#" class="follow-link">SEGUIR</a>
+                <img src="icon/settings_icon.png" alt="Configuración">
+                <img src="icon/close_icon.png" alt="Cerrar">
+            </div>
+        </div>
+        <div class="post-content">
+            <div class="post-image"></div>
+            <div class="post-image"></div>
+        </div>
+        <div class="post-footer">
+            <div class="post-action">
+                <img src="icon/like_icon.png" alt="Me gusta">
+                <span>Me gusta</span>
+            </div>
+            <div class="post-action">
+                <img src="icon/comment_icon.png" alt="Comentario">
+                <span>Comentario</span>
+            </div>
+            <div class="post-action">
+                <img src="icon/message_icon.png" alt="Enviar Mensaje">
+                <span>Enviar Mensaje</span>
+            </div>
+            <div class="post-action">
+                <img src="icon/share_icon.png" alt="Compartir">
+                <span>Compartir</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="ajustes.js"></script>
+</body>
+</html>
