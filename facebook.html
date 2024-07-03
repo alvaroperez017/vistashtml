@@ -9,18 +9,25 @@
 <body>
     <div class="profile-container">
         <div class="cover-photo">
-            <button class="add-cover-photo"><i class="camera-icon"></i> Agregar foto de portada</button>
+            <label for="coverUpload" class="add-cover-photo"><i class="camera-icon"></i> Agregar foto de portada</label>
+            <input type="file" id="coverUpload" accept="image/*" style="display: none;">
+            <img id="coverPreview" >
         </div>
         <div class="profile-details">
             <div class="profile-photo">
-                <img src="profile-photo.jpg" >
-                <button class="add-profile-photo"><i class="camera-icon"></i></button>
+                <label for="profileUpload" class="add-profile-photo"><i class="camera-icon"></i> </label>
+                <input type="file" id="profileUpload" accept="image/*" style="display: none;">
+                <img id="profilePreview" src="profile-photo.jpg" >
             </div>
             <div class="actions">
-                <a href="#" class="add-story"> Hoja De Vida</a>
+                <a href="#" class="add-story">Hoja De Vida</a>
                 <a href="#" class="edit-profile">Editar perfil</a>
             </div>
         </div>
+        <div class="profile-description">
+            <h2>Descripción Perfil</h2>
+            <textarea id="profileDescription" placeholder="Escribe una breve descripción..."></textarea>
+        </div>        
         <nav class="profile-nav">
             <ul>
                 <li><a href="#" class="nav-button">Publicaciones</a></li>
@@ -29,6 +36,7 @@
             </ul>
         </nav>
     </div>
-  
+
+    <script src="upload.js"></script>
 </body>
 </html>
